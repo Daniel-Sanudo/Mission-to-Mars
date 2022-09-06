@@ -89,11 +89,14 @@ def mars_facts():
     except BaseException:
         return None
 
-    # Assign columns and set index of dataframe
-    df.columns=['description', 'Mars', 'Earth']
-    df.set_index('description', inplace=True)
+    # Assign columns names
+    df.columns=['Description', 'Mars', 'Earth']
+    # Drop the row without relevant information
+    df = df.drop(0)
+    # Set all column names as the index for a better appearance
+    #df.set_index(list(df.columns.values), inplace=True)
 
-    return df.to_html()
+    return df.to_html(index = False, bold_rows = False, classes=["table-bordered", "table-striped", "table-hover"])
 
 def hemisphere_images(browser):
     # 1. Use browser to visit the URL 
