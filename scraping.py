@@ -96,7 +96,7 @@ def mars_facts():
     # Set all column names as the index for a better appearance
     #df.set_index(list(df.columns.values), inplace=True)
 
-    return df.to_html(index = False, bold_rows = False, classes=["table-bordered", "table-striped", "table-hover"])
+    return df.to_html(index = False, bold_rows = False, classes=["table", "table-bordered", "table-striped", "table-hover"])
 
 def hemisphere_images(browser):
     # 1. Use browser to visit the URL 

@@ -16,15 +16,9 @@ This web app is responsive to different display sizes as shown in the following 
 
 !["Desktop"](/images/web_app_desktop_view.png)
 
-#### Samsung Galaxy View
+#### Responsive View
 
-!["Galaxy_A51"](/images/web_app_samsung_galaxy_a51_view.png)
-
-#### Ipad Mini View
-
-!["Ipad_Mini](/images/web_app_ipad_mini_view.png)
-
-This is done by using the bootstrap img-responsive class on the images.
+!["Custom_Resolution"](/images/custom_view.png)
 
 ### Table
 
